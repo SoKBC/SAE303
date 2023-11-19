@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE303 - KMS</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>SweetMetrics</h1>
+        <h3>Comparateur de valeurs nutritionnelles et statistiques diverses sur les bonbons.</h3>
+    </header>
+
+
+    <main>
+        <section id="graphSection">
+            <h3>Graphique de comparaison des valeurs nutritionnelles de 2 bonbons</h3>
+            <p>Veuillez sélectionner deux bonbons parmi les deux listes ci-dessous afin de générer le graphique.</p>
+            <p><strong>PS : Veuillez écrire les noms des bonbons à l'identique.</strong></p>
+
+            <div style="width: 70%; height:500px; margin: auto;">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <label>Rechercher le premier produit :</label>
+            <input id="input1" name="name1" type="text" placeholder="Ex: Ricola" autofocus></input>
+            <div id="display1"></div>
+            <br>
+            <label>Rechercher le deuxième produit :</label>
+            <input id="input2" name="name2" type="text" placeholder="Ex: Tagada" autofocus></input>
+            <br>
+            <div id="display2"></div>
+            <script type="text/javascript" src="script.js" charset="UTF-8"></script>
+        </section>
+        <div class="barre-horizontale"></div>
+        <section id="">
+            <h3 style="text-align: center;">Top 5 des marques de bonbons possédant le plus de produits</h3>
+            <div style="width: 50%; height:500px; margin: auto;">
+                <canvas id="topBrandsChart"></canvas>
+            </div>
+        </section>
+        <div class="barre-horizontale"></div>
+        <section>
+            <h3 style="text-align: center;">Catégories les plus présentes dans les bonbons français</h3>
+            <div style="width: 50%; height:500px; margin: auto;">
+                <canvas id="categoryPieChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3 style="text-align: center">Made with ♥ par MONCADA Antoine, KASIKCI Kerim et KAABECHE Sofiane.</h3>
+    </footer>
+
+</body>
+
+</html>

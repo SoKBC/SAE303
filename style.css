@@ -1,0 +1,101 @@
+/* Définition des variables de couleur pour une utilisation cohérente dans tout le fichier CSS */
+:root {
+    --couleur-principale: #1A1C23; 
+    --couleur-titre: #E5E7EB; 
+    --couleur-fond-section: #121317; 
+    --couleur-barre-nav: #F8E9A1; 
+    --couleur-texte: #E5E7EB; 
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 2;
+    padding: 2;
+    background-color: var(--couleur-fond-section);
+    color: var(--couleur-texte);
+    position: relative; 
+}
+
+/* Style pour les paragraphes dans la liste */
+.paraList {
+    margin-left: 10px;
+}
+
+/* Style pour les sections principales de la page (header, main, footer) */
+header, main, footer {
+    margin: 20px;
+    background-color: var(--couleur-principale);
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 10 50px 40px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+/* Style pour les titres de niveau 1 et 2 */
+h1, h2 {
+    color: var(--couleur-titre);
+}
+
+/* Styles pour la barre horizontale */
+.barre-horizontale {
+    border-bottom: 3px solid #fff; 
+    width: 60%; /* Largeur de la barre */
+    margin: 0 auto; /* Pour centrer la barre horizontale */
+    margin-top: 60px; 
+}
+
+/* Style pour les tiquettes de formulaire */
+label {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Style pour la section d'affichage de données avec une barre de défilement */
+#display-data {
+    max-height: 300px; 
+    overflow-y: auto; /* Autorisez le défilement vertical lorsque le contenu dépasse la hauteur */
+    border: 2px solid #ccc;
+    padding: 10px; 
+}
+
+/* Style pour les conteneurs d'informations des produits */
+.container {
+    border: 2px solid #ddd;
+    margin-bottom: 10px; 
+}
+
+/* Style pour la liste de produits avec une barre de défilement */
+.product-list {
+    max-height: 300px;
+    overflow-y: auto; /* Autorisez le défilement vertical lorsque le contenu dépasse la hauteur */
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+/* Style pour la section des graphiques */
+#graphSection {
+    max-width: 800px; 
+    margin: auto;
+}
+
+/* Style pour le graphique principal avec une largeur maximale */
+#myChart {
+    max-width: 100%; 
+}
+
+/* Style pour les champs de saisie */
+input{
+    border-radius: 5px;
+    border-style: hidden;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+/* Style pour les sections avec une marge en haut et en bas */
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
